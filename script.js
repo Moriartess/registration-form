@@ -108,7 +108,7 @@ function checkPhone(number) {
 }
 
 function checkPassword(password) {
-    var passwordTemplate = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    var passwordTemplate = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     if (password.value.length == 0) {
         showErrorMsg(password, 'This field can\'t be empty');
     } else if (passwordTemplate.test(password.value)) {
