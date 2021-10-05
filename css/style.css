@@ -93,10 +93,6 @@ input#phone-num {
     z-index: 0;
 }
 
-#country-codes .image {
-    width: 5px;
-}
-
 .bi-eye-slash {
     position: absolute;
     right: 4px;    
