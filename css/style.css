@@ -1,0 +1,466 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 550;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: border-box;    
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 1px;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #ec4176 0%, #ffa45e 74%);
+}
+
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    min-width: 280px;
+    max-width: 500px;
+    background-color: #343884;
+    border: 3px solid #FF6EC7;
+    margin-top: 2vw;
+    padding: 15px 10px;
+}
+
+.toggle-buttons-container {
+    position: relative;
+    margin: 20px 0 23px 10vw;
+    background-color: white;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.toggle-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+.btn-one {
+    margin-right: 8px;
+    outline: none;
+}
+
+#btn-highlight {
+    background: #f4666e;
+    position: absolute;
+    border-radius: 20px;
+    margin: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn-highligth-switch-right {
+    right: 0;
+}
+
+.login-form-invisible {
+    display: none;
+}
+
+select#country-codes {
+    position: absolute;
+    padding-left: 4px;
+    z-index: 5;
+    top: 2px;
+    left: 2px;
+    border: none;
+    height: 85%;
+    border-radius: 5px;
+}
+
+input#phone-num {
+    z-index: 0;
+}
+
+#country-codes .image {
+    width: 5px;
+}
+
+.bi-eye-slash {
+    position: absolute;
+    right: 4px;    
+    top: 2px;
+    display: none;
+}
+
+.form-element-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-width: 400px;
+    height: 25px;
+    margin-bottom: 25px;
+}
+
+.form-element-wrapper-after {
+    margin-bottom: 40px;
+}
+
+.form-element {    
+    margin-top: 0;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pink-border {
+    border-bottom: 2px solid #FF6EC7;
+}
+
+.placeholder {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%)
+}
+
+.agreement {
+    color: white;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.confirm-btn-wrapper {
+    margin: 20px auto;
+    min-width: 100px;
+    width: 200px;
+    height: 40px;
+}
+
+.confirm-btn {
+    background: #F15970;
+    border-radius: 20px;
+    min-width: 100px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #FF6EC7;
+    outline: none;
+    box-shadow: none;
+}
+
+input, textarea, select { 
+    font-family: inherit; 
+    outline: none;
+}
+
+button {
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.form-element-focus:focus {
+    border: 2px solid #FF6EC7;
+}
+
+#name:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#name:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#surname:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#surname:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#dob:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#dob:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#email:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#email:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#phone-num:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#phone-num:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#password:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#password:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#password-confirm:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#password-confirm:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#email-login:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#email-login:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#password-login:focus +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+
+#password-login:valid +.placeholder {
+    top: -11px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.confirm-btn:hover {
+    background: #ee3550;
+}
+
+.status {
+    font-size: 10px;
+    color: white;
+}
+
+.success {
+    border: 2px solid #2ecc71;
+}
+
+.error {
+    border: 2px solid #e74c3c;
+}
+
+
+@media (max-width: 834px) {
+    * {
+        font-size: 12px;
+    }
+
+    .toggle-buttons-container {
+        width: 180px;
+    }
+
+    .status {
+        font-size: 8px;
+    }
+
+    .form-element-wrapper {
+        margin-bottom: 25px;
+    }
+
+    #name:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #name:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #surname:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #surname:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #dob:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #dob:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #email:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #email:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #phone-num:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #phone-num:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #password:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }    
+    
+    #password:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #password-confirm:focus +.placeholder {
+        top: -6px;
+        font-size: 10px;
+    }
+    
+    #password-confirm:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #email-login:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #email-login:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+    
+    #password-login:focus +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }    
+    
+    #password-login:valid +.placeholder {
+        top: -8px;
+        font-size: 10px;
+    }
+
+    .bi-eye-slash {
+        right: 4px;    
+        top: 4px;
+    }
+
+    .confirm-btn-wrapper {
+        width: 180px;
+    }
+
+    .confirm-btn {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+
+    .form-container {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+}

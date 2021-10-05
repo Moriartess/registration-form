@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="toggle-buttons-container">
+            <div id="btn-highlight"></div>
+            <button type="button" class="toggle-btn btn-one">Register</button>
+            <button type="button" class="toggle-btn btn-two">Log In</button>
+        </div>
+        <form id="registration-form">
+            <div class="form-element-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="name" name="name" min="2" required/>
+                <label for="name" class="placeholder">Name</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="surname" name="surname" required/>
+                <label for="surname" class="placeholder">Surname</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="dob" name="dob" required/>
+                <label for="dob" class="placeholder">Date of birth</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="email" name="email" required/>
+                <label for="email" class="placeholder">Email</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper">
+                <select id="country-codes">
+                    <option><img class="flag" src="img/ua-flag.png" alt="ukrainian flag"/>+380</option>
+                    <option><img class="flag" src="img/pl-flag.png" alt="polish flag">+48</option>
+                    <option><img class="flag" src="img/usa-flag.png" alt="usa flag">+1</option>
+                </select>
+                <input type="tel" class="form-element pink-border form-element-focus" id="phone-num" name="phone-num" required/>
+                <label for="phone-num" class="placeholder">Phone number</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper password-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="password" name="password" required/>
+                <label for="password" class="placeholder">Password</label>
+                <i class="bi bi-eye-slash" id="eye1" tabindex="0"></i>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper password-wrapper"> 
+                <input type="text" class="form-element pink-border form-element-focus" id="password-confirm" name="confirm-password" required/>
+                <label for="password-confirm" class="placeholder">Confirm password</label>
+                <i class="bi bi-eye-slash" id="eye2" tabindex="1"></i>
+                <div class="status"></div>
+            </div> 
+            <div class="form-element-wrapper agreement">
+                <input type="checkbox" id="confirm" name="confirm" required/>
+                <label>I agree to the terms and conditions</label>
+                <div class="status"></div>
+            </div>
+            <div class="confirm-btn-wrapper">
+                <button type="submit" formnovalidate id="register-btn" class="confirm-btn">Register</button>
+            </div>
+        </form>
+        <form id="login-form" class="login-form-invisible">
+            <div class="form-element-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="email-login" name="email" required/>
+                <label for="email-login" class="placeholder">Email</label>
+                <div class="status"></div>
+            </div>
+            <div class="form-element-wrapper password-wrapper">
+                <input type="text" class="form-element pink-border form-element-focus" id="password-login" name="password" required/>
+                <label for="password-login" class="placeholder">Password</label>
+                <i class="bi bi-eye-slash" id="eye3" tabindex="2"></i>
+                <div class="status"></div>
+            </div>
+            <div class="confirm-btn-wrapper">
+                <button type="submit" formnovalidate id="login-btn" class="confirm-btn">Log In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
